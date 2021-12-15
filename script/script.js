@@ -42,7 +42,7 @@ const menu = [
 
 
 // extract categories from menu
-const categories = [];
+const categories = ["All"];
 
 menu.forEach(item => {
     if (!categories.includes(item.category)) categories.push(item.category)
@@ -55,12 +55,13 @@ for( cat of categories) {
 
 // DOM: on category click print plates
 for( cat of categories) {
-    document.getElementById(cat).addEventListener("click", printPlates)
+    document.getElementById(cat).addEventListener("click", updatePlates)
 }
+
+printPlates(menu)
+
 // DOM: print plates
-function printPlates(evt) {
-    const plates =  menu.filter(item => item.category == evt.currentTarget.id)
-    console.log("evt");
+function printPlates(plates) {
     plateBox.innerHTML = ""
     plates.forEach(plate => {
         plateBox.innerHTML += `<div class="card_plate text-white col">
@@ -77,5 +78,12 @@ function printPlates(evt) {
     </div>`
     })
 }
+
+function updatePlates(evt) {
+    const cat = evt.currentTarget.id
+    if (cat == "All") printPlates(menu)
+    else printPlates(menu.filter(item => item.category == cat))
+}
+
 
 
