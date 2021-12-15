@@ -1,0 +1,76 @@
+/* background */
+#back {
+    min-height: 100vh;
+    background: url('https://source.unsplash.com/xhKG01FN2uk/1600x900');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-shadow: inset 0 0 0 50vw rgba(0, 0, 0, 0.5);
+}
+
+/* food categories */
+.catName {
+    font-size: 20px;
+    display: inline-flex;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    transition: all .3s ease-in-out;
+}
+
+.catName:hover {
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.black {
+    background-color: black;
+    display: inline;
+}
+
+/* plate card */
+.card_plate {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_plate:hover {
+    transform: translateY(-5px);
+}
+
+.card_plate:hover .plateImg {
+    filter: blur(1px);
+    filter: brightness(120%);
+}
+
+.plateImg {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.2s linear;
+}
+
+.infos {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.name {
+    font-size: 20px;
+}
+.descr {
+    font-style: italic;
+    font-size: 14px;
+    text-align: center
+}
+.price {
+    font-weight: bold;
+}
