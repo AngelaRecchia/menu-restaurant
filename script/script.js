@@ -1,3 +1,5 @@
+// import {menu} from "./data/menu.js"
+
 // DOM elements
 const catBox = document.getElementById("catBox")
 

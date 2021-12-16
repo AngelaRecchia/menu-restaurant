@@ -71,6 +71,7 @@ header, nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    min-height: calc(100% - 180px);
 }
 
 .name {
