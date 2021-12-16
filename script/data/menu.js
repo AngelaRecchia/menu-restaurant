@@ -1,4 +1,4 @@
-export const menu = [
+export const fullMenu = [
     {
         "name": "Margherita",
         "description": "Salsa di pomodoro, mozzarella di bufala campana DOP, pomodorini confit, gocce di pesto e basilico",
