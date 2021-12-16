@@ -26,12 +26,5 @@ export default [
         "price": "$15.00",
         "image": "https://bellodolceicecream.com/wp-content/uploads/2018/01/Bello-Dolce-Souffle.gif",
         "category": "Dessert"
-    },
-    {
-        "name": "Cheesecake",
-        "description": "oven baked cheesecake with salted caramel ice cream and strawberry confit",
-        "price": "$13.00",
-        "image": "https://projectveganbaking.com/wp-content/uploads/2021/04/04.jpeg",
-        "category": "Dessert"
     }
 ]
